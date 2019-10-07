@@ -81,8 +81,8 @@ class Login extends Component {
                 <Text style={styles.errorTextStyle}>
                     {this.state.error}
                 </Text>
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText} onPress={() => this.onButtonLogin()}>Login</Text>
+                <TouchableOpacity style={styles.button} onPress={() => this.onButtonLogin()}>
+                    <Text style={styles.buttonText} >Login</Text>
                 </TouchableOpacity>
             </View>
         )
