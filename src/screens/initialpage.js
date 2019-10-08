@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ActivityIndicator,
+  Text,
   AsyncStorage,
   StatusBar,
   StyleSheet,
@@ -18,11 +19,25 @@ class InitialPage extends React.Component {
 
   render() {
     return (
-      <View>
-        <ActivityIndicator />
+      <View style={styles.container}>
+        {/* <ActivityIndicator /> */}
+        <Text style={styles.loading}>Loading</Text>
         <StatusBar barStyle="default" />
       </View>
     );
   }
 }
 export default InitialPage;
+const styles= StyleSheet.create({
+  container:{
+    flex: 1,
+    backgroundColor: '#82B2B8', 
+    justifyContent: 'center',
+    alignContent:'center'
+  },
+  loading:{
+    fontSize: 20,
+    alignSelf: 'center',
+    justifyContent: 'center'
+  }
+})
